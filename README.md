@@ -30,11 +30,12 @@ Sur la page de la [dernière version](https://github.com/Adama-R/Projecta/releas
 | `Projecta-X.Y.Z-portable.exe` | l’essayer sans l’installer |
 | `SHA256SUMS.txt` | vérifier que le fichier téléchargé est intact |
 
-L’application se connecte à un **serveur Projecta** (son API) : au premier
-lancement, donnez son adresse (**Fichier › Adresse de l’API…**), celle
-que vous a donnée votre administrateur. Windows peut afficher « Windows a
-protégé votre ordinateur » : l’application n’est pas encore signée ;
-**Informations complémentaires › Exécuter quand même**.
+L’application se connecte d’elle-même à **Projecta en ligne** : créez
+votre compte au premier lancement, sans rien installer d’autre (une autre
+API se choisit dans **Fichier › Adresse de l’API…**). N’y envoyez que des
+données de démonstration ou déjà anonymisées. Windows peut afficher
+« Windows a protégé votre ordinateur » : l’application n’est pas encore
+signée ; **Informations complémentaires › Exécuter quand même**.
 
 ## Le guide
 
@@ -57,12 +58,14 @@ summarizes it, shows it in 2D and 3D, measures and exports it. Exams are
 anonymized when they are opened.
 
 - **Download for Windows**: [latest release](https://github.com/Adama-R/Projecta/releases/latest)
-  (installer, portable version, SHA-256 checksums). The application
-  connects to a Projecta server: give its address on first launch
-  (**File › API address…**).
+  (installer, portable version, SHA-256 checksums). It connects to Projecta
+  online by itself: create your account on first launch (another API:
+  **File › API address…**); send it demonstration or anonymized data only.
 - **User guide**: <https://adama-r.github.io/Projecta/en/>.
 - **Feedback**: **Help › Send feedback…** in the application, or an
   [issue](https://github.com/Adama-R/Projecta/issues).
 
-Licence MIT. Le code source de Projecta est privé ; ce dépôt publie
-l’application et le guide.
+Gratuit à utiliser pour essayer Projecta, tous droits réservés : voir la
+[licence](LICENSE). Le code source de Projecta est privé ; ce dépôt publie
+l’application et le guide. · Free to use to try Projecta, all rights
+reserved: see the [licence](LICENSE).
