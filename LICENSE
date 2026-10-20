@@ -1,21 +1,44 @@
-MIT License
+LICENCE D’UTILISATION DE PROJECTA
 
-Copyright (c) 2026 Adama
+Copyright (c) 2026 Adama-R. Tous droits réservés.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Projecta (l’application de bureau, le tableau de bord en ligne, l’API et
+   leur documentation) reste la propriété de son auteur. Le code source
+   n’est pas publié.
+2. Vous pouvez télécharger, installer et utiliser Projecta gratuitement,
+   pour l’essayer et donner votre avis.
+3. Sans l’accord écrit de l’auteur, vous ne pouvez pas le vendre, le
+   redistribuer (partager le lien du dépôt public reste permis), le
+   modifier, le décompiler ou le désassembler (hors ce que la loi autorise),
+   ni retirer cette notice.
+4. Projecta est fourni « tel quel », sans garantie. Ce n’est pas un
+   dispositif médical : il ne sert pas à poser un diagnostic. Dans les
+   limites permises par la loi, l’auteur n’est pas responsable des
+   dommages liés à son utilisation.
+5. Vos données restent les vôtres. N’envoyez au serveur en ligne que des
+   données de démonstration ou déjà anonymisées.
+6. Cette licence peut changer d’une version à l’autre ; celle qui
+   accompagne une version de Projecta s’applique à cette version.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+PROJECTA LICENCE
+
+Copyright (c) 2026 Adama-R. All rights reserved.
+
+1. Projecta (the desktop application, the online dashboard, the API and
+   their documentation) remains the property of its author. The source
+   code is not published.
+2. You may download, install and use Projecta free of charge, to try it
+   and give your feedback.
+3. Without the written agreement of the author, you may not sell it,
+   redistribute it (sharing the link of the public repository is allowed),
+   modify, decompile or disassemble it (except as the law allows), nor
+   remove this notice.
+4. Projecta is provided "as is", without warranty. It is not a medical
+   device: it is not meant to make a diagnosis. As far as the law allows,
+   the author is not liable for damages caused by its use.
+5. Your data remain yours. Send to the online server only demonstration
+   data or data already anonymized.
+6. This licence may change from one version to the next; the one that
+   comes with a version of Projecta applies to that version.
