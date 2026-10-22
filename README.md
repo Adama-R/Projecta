@@ -6,6 +6,7 @@
 
 <p align="center">
 <a href="https://github.com/Adama-R/Projecta/releases/latest"><b>Télécharger pour Windows</b></a> ·
+<a href="https://projecta-dashboard.vercel.app"><b>Dans le navigateur</b></a> ·
 <a href="https://adama-r.github.io/Projecta/"><b>Guide de l’utilisateur</b></a> ·
 <a href="https://adama-r.github.io/Projecta/en/">User guide (English)</a>
 </p>
@@ -37,6 +38,13 @@ données de démonstration ou déjà anonymisées. Windows peut afficher
 « Windows a protégé votre ordinateur » : l’application n’est pas encore
 signée ; **Informations complémentaires › Exécuter quand même**.
 
+Une fois installée, Projecta s’ajoute au menu **Ouvrir avec** de Windows
+pour les tableaux (CSV, Excel, Parquet, JSON, YAML) et les examens (DICOM,
+NIfTI, .zip).
+
+Sans rien installer : le même tableau de bord, et le même compte, dans le
+navigateur, sur <https://projecta-dashboard.vercel.app>.
+
 ## Le guide
 
 <https://adama-r.github.io/Projecta/> : charger des données, explorer et
@@ -61,6 +69,8 @@ anonymized when they are opened.
   (installer, portable version, SHA-256 checksums). It connects to Projecta
   online by itself: create your account on first launch (another API:
   **File › API address…**); send it demonstration or anonymized data only.
+- **In the browser**, nothing to install, the same account:
+  <https://projecta-dashboard.vercel.app>.
 - **User guide**: <https://adama-r.github.io/Projecta/en/>.
 - **Feedback**: **Help › Send feedback…** in the application, or an
   [issue](https://github.com/Adama-R/Projecta/issues).
