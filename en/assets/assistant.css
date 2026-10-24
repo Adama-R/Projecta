@@ -1,0 +1,363 @@
+/*
+ * The assistant of a documentation site (assistant.js). Its color comes
+ * from assets/assistant.json (--pda-color); light and dark schemes.
+ */
+
+:root {
+    --pda-color: #526cfe;
+    --pda-surface: #ffffff;
+    --pda-sunken: #f9fafb;
+    --pda-border: #e5e7eb;
+    --pda-text: #1f2937;
+    --pda-muted: #6b7280;
+    --pda-chip: #f3f4f6;
+}
+
+[data-md-color-scheme="slate"] {
+    --pda-surface: #1e2129;
+    --pda-sunken: #171a21;
+    --pda-border: #343844;
+    --pda-text: #e5e7eb;
+    --pda-muted: #9ca3af;
+    --pda-chip: #262a33;
+}
+
+.pda-fab {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    z-index: 30;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: var(--pda-color);
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(17, 24, 39, 0.3);
+    cursor: pointer;
+}
+
+.pda-fab:focus-visible,
+.pda-panel button:focus-visible,
+.pda-panel a:focus-visible {
+    outline: 2px solid var(--pda-color);
+    outline-offset: 2px;
+}
+
+.pda-panel {
+    position: fixed;
+    right: 28px;
+    bottom: 100px;
+    z-index: 30;
+    width: min(440px, calc(100vw - 32px));
+    height: min(690px, calc(100vh - 124px));
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--pda-border);
+    border-radius: 14px;
+    background: var(--pda-surface);
+    color: var(--pda-text);
+    box-shadow: 0 24px 60px rgba(17, 24, 39, 0.28);
+    font-family: var(--md-text-font, Inter), -apple-system, "Segoe UI", sans-serif;
+    font-size: 13.5px;
+    line-height: 1.55;
+}
+
+.pda-panel[hidden] {
+    display: none;
+}
+
+.pda-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--pda-color);
+    color: #ffffff;
+}
+
+.pda-badge {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.pda-head-text {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.pda-head-text strong {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pda-head-text span {
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.pda-close {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.pda-messages {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 14px 16px;
+    overflow-y: auto;
+    background: var(--pda-sunken);
+}
+
+.pda-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.pda-suggestion {
+    padding: 6px 10px;
+    border: 1px solid var(--pda-border);
+    border-radius: 999px;
+    background: var(--pda-surface);
+    color: var(--pda-text);
+    font: inherit;
+    font-size: 12.5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.pda-turn-user {
+    align-self: flex-end;
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pda-user {
+    align-self: flex-end;
+    padding: 9px 12px;
+    border-radius: 12px 12px 2px 12px;
+    background: var(--pda-color);
+    color: #ffffff;
+    overflow-wrap: anywhere;
+}
+
+.pda-masked {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.pda-masked svg {
+    flex-shrink: 0;
+}
+
+.pda-bot {
+    max-width: 92%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 12px;
+    border: 1px solid var(--pda-border);
+    border-radius: 12px 12px 12px 2px;
+    background: var(--pda-surface);
+}
+
+.pda-answer-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pda-answer-text p,
+.pda-answer-text ol,
+.pda-answer-text ul {
+    margin: 0;
+}
+
+.pda-answer-text ol,
+.pda-answer-text ul {
+    padding-left: 18px;
+}
+
+.pda-answer-text code {
+    padding: 1px 4px;
+    border-radius: 4px;
+    background: var(--pda-chip);
+    font-size: 12px;
+}
+
+.pda-code {
+    margin: 0;
+    padding: 8px 10px;
+    overflow-x: auto;
+    border-radius: 8px;
+    background: #111827;
+    color: #e5e7eb;
+    font-size: 11.5px;
+    line-height: 1.6;
+}
+
+.pda-code code {
+    padding: 0;
+    background: none;
+}
+
+.pda-ref {
+    font-size: 11px;
+    vertical-align: super;
+    text-decoration: none;
+}
+
+.pda-cited {
+    color: var(--pda-muted);
+    font-size: 12px;
+}
+
+.pda-cited .pda-ref {
+    vertical-align: baseline;
+}
+
+.pda-sources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.pda-source {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--pda-chip);
+    color: var(--pda-color);
+    font-size: 12.5px;
+    text-decoration: none;
+}
+
+.pda-vote {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--pda-muted);
+    font-size: 12px;
+}
+
+.pda-vote button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--pda-border);
+    border-radius: 8px;
+    background: var(--pda-surface);
+    color: var(--pda-text);
+    cursor: pointer;
+}
+
+.pda-pending {
+    color: var(--pda-muted);
+}
+
+.pda-form {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 12px 14px;
+    border-top: 1px solid var(--pda-border);
+    background: var(--pda-surface);
+}
+
+.pda-input {
+    min-width: 0;
+    flex-grow: 1;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid var(--pda-border);
+    border-radius: 10px;
+    background: var(--pda-surface);
+    color: var(--pda-text);
+    font: inherit;
+}
+
+.pda-send {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    background: var(--pda-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.pda-send:disabled {
+    opacity: 0.6;
+    cursor: progress;
+}
+
+.pda-privacy {
+    margin: 0;
+    padding: 0 14px 10px;
+    background: var(--pda-surface);
+    color: var(--pda-muted);
+    font-size: 11.5px;
+    line-height: 1.45;
+}
+
+@media (max-width: 600px) {
+    .pda-panel {
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .pda-fab {
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+@media print {
+    .pda-fab,
+    .pda-panel {
+        display: none;
+    }
+}
