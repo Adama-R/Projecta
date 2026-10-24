@@ -1,0 +1,1654 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Explorer des données et des images médicales avec Projecta">
+      
+      
+        <meta name="author" content="Adama">
+      
+      
+        <link rel="canonical" href="https://adama-r.github.io/Projecta/imagerie/">
+      
+      
+        <link rel="prev" href="../espaces/">
+      
+      
+        <link rel="next" href="../assistant/">
+      
+      
+        
+          <link rel="alternate" href="./.." hreflang="fr">
+        
+          <link rel="alternate" href="../en/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="zensical-0.0.67">
+    
+    
+      
+        <title>Imagerie médicale - Projecta — Guide de l’utilisateur</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.4ae390e2.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.96d1a7e4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/assistant.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+<style>
+  .md-footer-meta { display: none; }
+</style>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#imagerie-medicale" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="./.." title="Projecta — Guide de l’utilisateur" class="md-header__button md-logo" aria-label="Projecta — Guide de l’utilisateur" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="Projecta — Guide de l’utilisateur">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projecta — Guide de l’utilisateur
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Imagerie médicale
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-languages" viewBox="0 0 24 24"><path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1M22 22l-5-10-5 10M14 18h6"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./.." hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Recherche">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Recherche">
+  <button type="button" class="md-search__button">
+    Recherche
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./.." class="md-tabs__link">
+        
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../compte/" class="md-tabs__link">
+        
+  
+  Compte et connexion
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../donnees/" class="md-tabs__link">
+          
+  
+  Données
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="././" class="md-tabs__link">
+        
+  
+  Imagerie médicale
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../assistant/" class="md-tabs__link">
+        
+  
+  Assistant
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../application-de-bureau/" class="md-tabs__link">
+        
+  
+  Application de bureau
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../aide/" class="md-tabs__link">
+        
+  
+  Aide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../nouveautes/" class="md-tabs__link">
+        
+  
+  Nouveautés
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Projecta — Guide de l’utilisateur" class="md-nav__button md-logo" aria-label="Projecta — Guide de l’utilisateur" data-md-component="logo">
+      
+  <img src="../assets/logo.svg" alt="Projecta — Guide de l’utilisateur">
+
+    </a>
+    Projecta — Guide de l’utilisateur
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Accueil
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Compte et connexion
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Données
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  Données
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../donnees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Charger des données
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apercu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Explorer et exporter
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualiser/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Visualiser
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../espaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Espaces de travail
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imagerie médicale
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Imagerie médicale
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#essayer-sans-donnees-de-patient" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Essayer sans données de patient
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ouvrir-un-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ouvrir un examen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visionneuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Visionneuse
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projections-et-fusion-teptdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Projections et fusion TEP/TDM
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sur-tablette" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sur tablette
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balises-dicom-et-dose" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Balises DICOM et dose
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mesures-et-analyse" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mesures et analyse
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segmenter-les-lesions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Segmenter les lésions
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparer-deux-examens" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Comparer deux examens
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compte-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Compte rendu
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporter-ou-partager" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Exporter ou partager
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formats-lus" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Formats lus
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Assistant
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../application-de-bureau/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Application de bureau
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Aide
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nouveautes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Nouveautés
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#essayer-sans-donnees-de-patient" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Essayer sans données de patient
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ouvrir-un-examen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Ouvrir un examen
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visionneuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Visionneuse
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#projections-et-fusion-teptdm" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Projections et fusion TEP/TDM
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sur-tablette" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sur tablette
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#balises-dicom-et-dose" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Balises DICOM et dose
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mesures-et-analyse" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mesures et analyse
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segmenter-les-lesions" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Segmenter les lésions
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparer-deux-examens" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Comparer deux examens
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compte-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Compte rendu
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporter-ou-partager" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Exporter ou partager
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formats-lus" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Formats lus
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="imagerie-medicale">Imagerie médicale<a class="headerlink" href="#imagerie-medicale" title="Permanent link">&para;</a></h1>
+<p>La partie <strong>IMAGERIE</strong> du menu latéral ouvre des examens DICOM ou NIfTI
+(IRM, scanner…), les montre en trois plans et en 3D, mesure les lésions,
+suit leur évolution d’un examen à l’autre et prépare un compte rendu.</p>
+<div class="admonition warning">
+<p class="admonition-title">Une aide, pas un diagnostic</p>
+<p>Projecta aide à la lecture et à la mesure. Le diagnostic et le compte
+rendu restent ceux du médecin, qui les valide. Projecta n’est pas un
+dispositif médical certifié.</p>
+</div>
+<h2 id="essayer-sans-donnees-de-patient">Essayer sans données de patient<a class="headerlink" href="#essayer-sans-donnees-de-patient" title="Permanent link">&para;</a></h2>
+<p>L’administrateur peut fournir deux IRM de synthèse d’un patient fictif, à
+six mois d’écart (une lésion grossit, une est stable, une est nouvelle),
+et une TEP-TDM cérébrale au FDG du même patient (pour la dose et les
+balises) : aucune donnée réelle, de quoi essayer chaque écran.</p>
+<h2 id="ouvrir-un-examen">Ouvrir un examen<a class="headerlink" href="#ouvrir-un-examen" title="Permanent link">&para;</a></h2>
+<p><img alt="Ouvrir des images médicales" src="../assets/screenshots/imagerie-ouvrir.png" /></p>
+<ol>
+<li><strong>Fichiers de l’ordinateur</strong>, <strong>Serveur PACS</strong> ou <strong>Examens récents</strong>.</li>
+<li>Déposer les fichiers ou un dossier (DICOM, NIfTI, <code>.zip</code>).</li>
+<li><strong>Anonymiser à l’ouverture</strong> (cochée par défaut).</li>
+<li><strong>Ouvrir l’examen</strong>.</li>
+</ol>
+<p><strong>Imagerie › Examens › Ouvrir un examen</strong>, trois onglets :</p>
+<table>
+<thead>
+<tr>
+<th>Onglet</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fichiers de l’ordinateur</td>
+<td>des fichiers DICOM (avec ou sans extension <code>.dcm</code>), un <strong>dossier</strong> entier, des <code>.zip</code>, ou des volumes NIfTI (<code>.nii</code>, <code>.nii.gz</code>) ; 500 Mo au plus ensemble</td>
+</tr>
+<tr>
+<td>Serveur PACS</td>
+<td>un PACS joignable en <strong>DICOMweb</strong> (Orthanc, dcm4chee…) : rechercher par patient, dates et modalité, choisir l’examen puis ses séries</td>
+</tr>
+<tr>
+<td>Examens récents</td>
+<td>les examens déjà ouverts</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Anonymiser à l’ouverture</strong> (coché par défaut) : le nom, la date de
+naissance complète, les identifiants et l’établissement sont retirés de la
+copie de travail. Le patient devient un code (<code>ANON-3F2A1C</code>), <strong>le même
+pour tous ses examens</strong>, ce qui permet de les comparer sans savoir de qui
+il s’agit. Le code est calculé avec un secret du serveur : sans lui, on
+ne peut pas retrouver l’identifiant.</p>
+<p>Les images d’origine ne changent pas : Projecta travaille sur une copie,
+visible du seul utilisateur qui l’a ouverte, et supprimable depuis
+<strong>Examens</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">PACS du réseau de l’hôpital</p>
+<p>Un PACS du réseau interne doit être autorisé par l’administrateur
+(comme les serveurs distants). Le mot de passe ou le jeton du PACS
+n’est pas enregistré ; l’adresse l’est, dans l’espace de travail.</p>
+</div>
+<h2 id="visionneuse">Visionneuse<a class="headerlink" href="#visionneuse" title="Permanent link">&para;</a></h2>
+<p><img alt="La visionneuse : trois plans et rendu 3D" src="../assets/screenshots/imagerie-visionneuse.png" /></p>
+<ol>
+<li>L’examen : son code anonymisé, sa date ; <strong>Exporter ou partager</strong>,
+   <strong>Comparer</strong>, <strong>Compte rendu</strong>.</li>
+<li>Les outils : fenêtrage, zoom, règle, angle, ROI, <strong>Segmenter</strong>…</li>
+<li>Les séries de l’examen.</li>
+<li>La coupe axiale ; les coupes sagittale et coronale à côté, le rendu 3D
+   en bas.</li>
+<li>
+<p>Le curseur des coupes.</p>
+</li>
+<li>
+<p><strong>Séries</strong> à gauche ; au centre, les coupes <strong>axiale</strong>, <strong>sagittale</strong> et
+  <strong>coronale</strong> (reconstruites à partir du volume : MPR) et un <strong>rendu 3D</strong>
+  (projection d’intensité maximale, à faire pivoter en glissant).</p>
+</li>
+<li>Un clic place le <strong>réticule</strong> : les deux autres plans montrent les coupes
+  qui passent par ce point. La molette, le curseur sous chaque vue ou les
+  flèches du clavier font défiler les coupes.</li>
+<li><strong>Outils</strong> : Fenêtrage (glisser : horizontalement la largeur,
+  verticalement le centre), Zoom, Déplacer, Défiler, <strong>Règle</strong> (glisser
+  d’un point à l’autre), <strong>Angle</strong> (trois clics), <strong>ROI</strong>.</li>
+<li>Fenêtres préréglées : « Auto » (celle de l’examen ; en TEP, de zéro aux
+  voxels les plus fixants), et pour le scanner : cerveau, parties molles,
+  poumon, os.</li>
+<li>Le bouton <strong>+</strong> d’une vue l’ajoute aux <strong>images clés</strong> du compte rendu ;
+  le bouton d’agrandissement la montre seule.</li>
+</ol>
+<h2 id="projections-et-fusion-teptdm">Projections et fusion TEP/TDM<a class="headerlink" href="#projections-et-fusion-teptdm" title="Permanent link">&para;</a></h2>
+<p>L’onglet <strong>Affichage</strong> du panneau de droite règle la façon de voir les
+plans :</p>
+<ul>
+<li><strong>Projection</strong> : <strong>Coupe</strong> (une coupe), <strong>MIP</strong> (la valeur la plus forte
+  sur l’épaisseur : foyers TEP, vaisseaux injectés), <strong>MinIP</strong> (la plus
+  faible : bronches, emphysème) ou <strong>Moyenne</strong> (lisse le bruit), sur une
+  <strong>épaisseur</strong> de 5 à 100 mm ou sur tout le volume.</li>
+<li><strong>Fusion TEP / TDM</strong> (aussi le bouton <strong>Fusion</strong> de la barre d’outils,
+  pour un examen qui a une TEP et une TDM) : la TEP en couleurs sur la
+  TDM, son <strong>opacité</strong>, ses <strong>couleurs</strong> (chaud, arc-en-ciel, gris) et sa
+  fenêtre. Les deux séries d’un même examen sont alignées par leurs
+  coordonnées DICOM. Le rendu 3D montre alors la MIP de la TEP en gris
+  inversé ; <strong>▶</strong> la fait tourner.</li>
+<li><strong>Sous la croix</strong> : la valeur de la TDM (HU) et celle de la TEP, en
+  <strong>SUV</strong> quand la série donne son unité (Bq/mL), le poids du patient et
+  la dose injectée ; avec le SUVmax et le SUVmoy d’une sphère de 1 cm.</li>
+</ul>
+<h2 id="sur-tablette">Sur tablette<a class="headerlink" href="#sur-tablette" title="Permanent link">&para;</a></h2>
+<p>Sur une tablette (en paysage) ou une fenêtre étroite, la visionneuse
+montre une seule grande vue, pour relire un examen au lit du patient ou
+en réunion : le même tableau de bord, dans le navigateur, rien à
+installer.</p>
+<p><img alt="La visionneuse sur une tablette" src="../assets/screenshots/imagerie-tablette.png" /></p>
+<ol>
+<li>La grande vue (axiale ; le bouton d’agrandissement montre les quatre
+   vues).</li>
+<li>Les séries, à droite.</li>
+<li>Les outils, en boutons de 64 px : <strong>Défiler</strong>, <strong>Fenêtrage</strong>,
+   <strong>Zoom</strong>, <strong>Règle</strong>, <strong>ROI</strong>.</li>
+<li><strong>Ciné</strong> : les coupes défilent seules ; un second appui les arrête.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Geste</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Glisser un doigt (Défiler)</td>
+<td>les coupes défilent</td>
+</tr>
+<tr>
+<td>Appui long, puis glisser</td>
+<td>le fenêtrage (glisser à droite : plus large ; vers le haut : plus clair)</td>
+</tr>
+<tr>
+<td>Deux doigts</td>
+<td>zoom (écarter, rapprocher) et déplacement</td>
+</tr>
+<tr>
+<td>Toucher</td>
+<td>le réticule va là</td>
+</tr>
+</tbody>
+</table>
+<p>Avec un autre outil choisi, le doigt fait ce que fait l’outil (fenêtrage,
+zoom, règle, ROI). La flèche en haut à gauche revient aux examens. La
+segmentation, l’export, le partage et le compte rendu restent sur
+ordinateur.</p>
+<div class="admonition note">
+<p class="admonition-title">15 minutes</p>
+<p>Sur tablette, la session se ferme après 15 minutes sans toucher
+l’écran : une tablette se prête facilement. Reconnectez-vous pour
+reprendre.</p>
+</div>
+<h2 id="balises-dicom-et-dose">Balises DICOM et dose<a class="headerlink" href="#balises-dicom-et-dose" title="Permanent link">&para;</a></h2>
+<p><img alt="Les balises DICOM d’une série TEP" src="../assets/screenshots/imagerie-balises.png" /></p>
+<ol>
+<li>L’onglet <strong>Balises</strong> du panneau de droite, qui s’élargit.</li>
+<li><strong>Rechercher une balise</strong> : par numéro, nom ou valeur.</li>
+<li>Les filtres : <strong>Toutes</strong>, <strong>Patient</strong>, <strong>Examen</strong>, <strong>Image</strong>,
+   <strong>Retirées ou remplacées</strong>.</li>
+<li>La colonne <strong>À l’ouverture</strong> : ce que l’anonymisation a fait de la
+   balise.</li>
+<li><strong>CSV</strong> : la liste complète, à joindre à une demande ou à comparer.</li>
+</ol>
+<p>L’onglet <strong>Balises</strong> liste toutes les balises publiques de la première
+image de la série (les balises privées des constructeurs et les pixels ne
+sont pas gardés). Celles d’une séquence suivent la séquence, marquées
+<code>›</code>.</p>
+<table>
+<thead>
+<tr>
+<th>À l’ouverture</th>
+<th>Sens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gardé</td>
+<td>la valeur du fichier</td>
+</tr>
+<tr>
+<td>Remplacé</td>
+<td>le nom et l’identifiant du patient, remplacés par son code</td>
+</tr>
+<tr>
+<td>Retiré</td>
+<td>une donnée d’identité (date de naissance, établissement, médecins, numéro d’accès, UID…) : sa valeur n’a pas été gardée</td>
+</tr>
+</tbody>
+</table>
+<p>Un examen ouvert <strong>sans</strong> anonymisation garde toutes ses valeurs. Les
+examens ouverts avant cette version montrent seulement le résumé des
+réglages : ouvrez de nouveau les fichiers pour voir toutes les balises.</p>
+<p><img alt="La dose d’une TEP-TDM" src="../assets/screenshots/imagerie-dose.png" /></p>
+<ol>
+<li><strong>Dose de cet examen</strong>, en bas de l’onglet <strong>Informations</strong>.</li>
+<li>Le scanner : CTDIvol et PDL.</li>
+<li>La TEP : traceur, activité, heure d’injection.</li>
+<li>La dose efficace estimée de l’examen.</li>
+</ol>
+<p><strong>Dose de cet examen</strong> (onglet <strong>Informations</strong>), quand les en-têtes la
+donnent :</p>
+<ul>
+<li><strong>scanner</strong> : le CTDIvol moyen des coupes et le <strong>PDL</strong> (produit
+  dose·longueur : CTDIvol × longueur couverte) ;</li>
+<li><strong>TEP ou scintigraphie</strong> : le traceur, l’activité injectée (MBq) et
+  l’heure d’injection ;</li>
+<li><strong>dose efficace estimée</strong> (mSv) : PDL × un coefficient de la région
+  examinée (tête 0,0021 ; cou 0,0059 ; thorax 0,014 ; abdomen et pelvis
+  0,015), plus, pour le FDG, 0,019 mSv par MBq ;</li>
+<li><strong>Suivi · ce patient, 12 mois</strong> : ses examens des douze mois précédents
+  ouverts dans Projecta, et leur cumul.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Une estimation</p>
+<p>La dose efficace est une estimation d’adulte à partir de coefficients
+publiés, pas une dosimétrie du patient. Quand un examen a plusieurs
+séries de scanner (reconstructions), celle au plus fort PDL est comptée
+une fois. Les autres traceurs que le FDG n’ont pas d’estimation.</p>
+</div>
+<h2 id="mesures-et-analyse">Mesures et analyse<a class="headerlink" href="#mesures-et-analyse" title="Permanent link">&para;</a></h2>
+<p>Une <strong>ROI</strong> est une ellipse tracée autour d’une lésion. La vue <strong>zoome sur
+la partie tracée</strong> pour la regarder de près (un clic sur le nom de la ROI,
+dans <strong>Mesures</strong>, y revient ; <strong>Réinitialiser</strong> remontre toute l’image).
+En tête de <strong>Mesures</strong>, la galerie <strong>Régions</strong> montre chaque région tracée
+sur la série, avec son volume ; elle se complète à chaque nouvelle ROI, et
+un clic sur une vignette y revient. L’API calcule :</p>
+<ul>
+<li>sur la coupe : surface, moyenne ± écart-type, minimum et maximum ;</li>
+<li>la <strong>lésion</strong> : les voxels plus brillants que la moitié entre le pic de
+  l’ellipse et le tissu à son bord (contour « à mi-hauteur »), reliés au
+  pic, sur la coupe et les coupes voisines ; son <strong>volume</strong> et le nombre
+  de coupes qu’elle occupe ;</li>
+<li><strong>18 caractéristiques radiomiques</strong> : forme (volume, surface, sphéricité,
+  allongement, plus grand diamètre), intensité (moyenne, écart-type,
+  médiane, 10ᵉ et 90ᵉ centiles, asymétrie, aplatissement, entropie,
+  uniformité), texture (contraste, homogénéité, corrélation et énergie de
+  la matrice de cooccurrence).</li>
+</ul>
+<p>Le contour à mi-hauteur convient aux lésions nettement plus claires que le
+tissu voisin (hypersignaux FLAIR, prise de contraste). Pour une lésion
+sombre ou mal limitée, vérifiez le volume.</p>
+<p>Les mesures sont enregistrées avec l’examen. <strong>Mesures en CSV</strong> les
+télécharge.</p>
+<p><strong>Ajouter à la cohorte</strong> ajoute la lésion, une ligne par lésion, à un jeu
+de données (<code>imagerie/cohortes/&lt;nom&gt;.csv</code> du dossier des jeux) : code du
+patient, date de l’examen, série, nom de la lésion, sexe, âge et les 18
+caractéristiques. Une fois chargée, la cohorte se projette comme n’importe
+quel jeu (PCA, t-SNE, UMAP) : les lésions qui se ressemblent se
+regroupent.</p>
+<h2 id="segmenter-les-lesions">Segmenter les lésions<a class="headerlink" href="#segmenter-les-lesions" title="Permanent link">&para;</a></h2>
+<p>L’outil <strong>Segmenter</strong> propose le contour des lésions, en 3D ; vous le
+corrigez, puis vous le validez.</p>
+<p><img alt="Segmenter une lésion" src="../assets/screenshots/imagerie-segmentation.png" /></p>
+<ol>
+<li>L’outil <strong>Segmenter</strong> : le panneau de droite devient celui de la
+   segmentation.</li>
+<li>La façon de segmenter : <strong>Clic</strong>, <strong>Seuil</strong>, <strong>Pinceau</strong>, <strong>Gomme</strong>.</li>
+<li>Son réglage : la tolérance (Clic), le seuil (Seuil) ou le rayon du
+   pinceau.</li>
+<li>Les lésions : nom, coupes, volume (mL). Un clic choisit une lésion (son
+   nom se modifie) ; la corbeille la retire.</li>
+<li>Le rendu 3D montre les lésions en couleur.</li>
+<li>Les coupes de la lésion choisie : un clic y va.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Façon</th>
+<th>Ce qu’elle fait</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clic</td>
+<td>un clic dans la lésion : les voxels reliés dont la valeur est proche (± la tolérance, une part de la largeur de la fenêtre affichée) sont proposés, sur la coupe ou, avec <strong>Suivre sur les coupes voisines</strong>, en 3D</td>
+</tr>
+<tr>
+<td>Seuil</td>
+<td>pareil, avec les voxels au-dessus d’une valeur</td>
+</tr>
+<tr>
+<td>Pinceau</td>
+<td>glisser sur une coupe ajoute un disque à la lésion choisie (une nouvelle s’il n’y en a pas)</td>
+</tr>
+<tr>
+<td>Gomme</td>
+<td>glisser retire de la lésion choisie (de toutes, sans lésion choisie)</td>
+</tr>
+</tbody>
+</table>
+<p>Une proposition qui couvrirait plus de 5 % du volume est refusée : la
+tolérance déborde sur le tissu voisin ; baissez-la, ou montez le seuil.</p>
+<p><strong>Valider</strong> garde les lésions avec l’examen, avec leur volume et les 18
+caractéristiques radiomiques (comme une ROI) ; <strong>Annuler</strong> revient aux
+lésions validées. Une fois validées :</p>
+<ul>
+<li><strong>Ajouter à la cohorte</strong> : une ligne par lésion dans le jeu de la
+  cohorte (voir <a href="#mesures-et-analyse">Mesures et analyse</a>) ;</li>
+<li><strong>Masque NIfTI</strong> : un fichier <code>.nii.gz</code> où chaque lésion a son numéro
+  (1, 2, 3…), aligné avec l’export du volume : pour 3D Slicer, ITK-SNAP
+  ou Python.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Une aide au contour</p>
+<p>La proposition suit les valeurs de l’image, pas l’anatomie : vérifiez
+chaque coupe, corrigez au pinceau et à la gomme. Rien n’est gardé sans
+<strong>Valider</strong>.</p>
+</div>
+<h2 id="comparer-deux-examens">Comparer deux examens<a class="headerlink" href="#comparer-deux-examens" title="Permanent link">&para;</a></h2>
+<p><strong>Comparer</strong> montre la même série de deux examens du même patient, côte à
+côte :</p>
+<ul>
+<li><strong>Défilement lié</strong> : les deux vues défilent ensemble ;</li>
+<li><strong>Recalage automatique</strong> : les coupes sont appariées par la position de
+  la tête (le centre du patient dans chaque volume), ce qui compense un
+  patient placé plus haut ou plus bas. Ce n’est pas un recalage complet
+  (rotation, déformation) ;</li>
+<li><strong>Évolution des lésions</strong> : les ROI de même nom dans les deux examens,
+  avec leur volume et l’écart (<code>+12 %</code>, <code>nouvelle</code>, <code>disparue</code>), et le
+  graphique du volume de chaque lésion au fil de tous les examens.</li>
+</ul>
+<p>Pour suivre une lésion, donnez-lui le même nom dans chaque examen (champ
+« Lésion » de la mesure).</p>
+<h2 id="compte-rendu">Compte rendu<a class="headerlink" href="#compte-rendu" title="Permanent link">&para;</a></h2>
+<p>Un brouillon est prérempli : indication, technique (séquences, champ),
+résultats (chaque lésion et son évolution par rapport à l’examen
+précédent), conclusion à écrire. Les images clés et les mesures sont
+jointes.</p>
+<ul>
+<li><strong>Enregistrer le brouillon</strong> ;</li>
+<li><strong>Exporter en PDF</strong> : la fenêtre d’impression du navigateur, le compte
+  rendu seul ;</li>
+<li><strong>Valider</strong> : il faut une conclusion et une signature ; le compte rendu
+  n’est plus modifiable, sauf à <strong>Rouvrir le brouillon</strong>.</li>
+</ul>
+<p>L’envoi au PACS (DICOM SR) est prévu pour une prochaine version.</p>
+<h2 id="exporter-ou-partager">Exporter ou partager<a class="headerlink" href="#exporter-ou-partager" title="Permanent link">&para;</a></h2>
+<p><strong>Exporter ou partager</strong> (en haut de la visionneuse) :</p>
+<p><img alt="Exporter ou partager un examen" src="../assets/screenshots/imagerie-partage.png" /></p>
+<ol>
+<li>Le format de l’export.</li>
+<li>Pour la vidéo : la vitesse et la taille des images.</li>
+<li>Ce qui est incrusté dans les images.</li>
+<li><strong>Pour qui ?</strong> : un nom, pour vous retrouver dans vos liens.</li>
+<li>La durée du lien, le <strong>code d’accès</strong>, puis <strong>Créer le lien</strong>.</li>
+<li>Le lien à copier, et le code à envoyer <strong>à part</strong> (un autre message).</li>
+<li>Le bouton d’export, selon le format choisi.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Export</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>La vue affichée (PNG)</td>
+<td>la vue agrandie (sinon l’axiale), à la coupe et avec la fenêtre de l’écran, 2 048 px de large</td>
+</tr>
+<tr>
+<td>Le ciné en vidéo</td>
+<td>toutes les coupes de ce plan, à 5, 10 ou 20 images par seconde ; MP4, ou WebM si le navigateur ne sait pas écrire de MP4</td>
+</tr>
+<tr>
+<td>Les images de la série (JPEG, <code>.zip</code>)</td>
+<td>une image par coupe</td>
+</tr>
+<tr>
+<td>La série DICOM anonymisée (<code>.zip</code>)</td>
+<td>des images DICOM écrites de nouveau, pour un autre logiciel ou un collègue</td>
+</tr>
+<tr>
+<td>Le volume (NIfTI, <code>.nii.gz</code>)</td>
+<td>pour l’analyse (Python, 3D Slicer…)</td>
+</tr>
+</tbody>
+</table>
+<p>Les exports reprennent ce que l’examen a gardé à son ouverture : un
+examen anonymisé reste anonymisé (le code du patient, jamais son nom). Les
+incrustations (mesures, code de l’examen, date et série, barre d’échelle
+de 1 cm) se cochent pour les images et la vidéo.</p>
+<p><strong>Partager un lien</strong> : la personne qui le reçoit ouvre l’examen dans une
+visionneuse <strong>en lecture seule</strong>, sans compte (fenêtrage, zoom,
+déplacement, défilement ; ni mesure, ni téléchargement) :</p>
+<p><img alt="Un examen ouvert par un lien de partage" src="../assets/screenshots/imagerie-lien.png" /></p>
+<ol>
+<li><strong>Lecture seule</strong>.</li>
+<li>La date de fin du lien.</li>
+<li>
+<p>Les outils de lecture et la fenêtre.</p>
+</li>
+<li>
+<p>Durée : 24 heures, 7 jours ou 30 jours. Un lien expiré n’ouvre plus
+  rien et disparaît de la liste.</p>
+</li>
+<li><strong>Code d’accès</strong> (conseillé) : 6 chiffres, montrés une seule fois, à
+  envoyer par un autre moyen que le lien. Après 10 codes erronés, le lien
+  est bloqué.</li>
+<li><strong>Liens actifs</strong> : pour qui, date de fin, nombre d’ouvertures.
+  <strong>Révoquer</strong> coupe le lien tout de suite.</li>
+<li>Seul un examen <strong>anonymisé</strong> peut être partagé. Supprimer l’examen coupe
+  aussi ses liens.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Un lien est une clé</p>
+<p>Qui a le lien (et son code) voit l’examen jusqu’à sa date de fin.
+Préférez le code d’accès, la durée la plus courte utile, et révoquez
+un lien qui n’a plus d’usage.</p>
+</div>
+<h2 id="formats-lus">Formats lus<a class="headerlink" href="#formats-lus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Remarques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DICOM</td>
+<td>une image par fichier (les fichiers <em>multi-frame</em> ne sont pas encore lus), triées par position ; séries regroupées par <code>SeriesInstanceUID</code>, examens par <code>StudyInstanceUID</code></td>
+</tr>
+<tr>
+<td>NIfTI-1</td>
+<td><code>.nii</code> ou <code>.nii.gz</code> ; un volume 4D montre son premier volume</td>
+</tr>
+</tbody>
+</table>
+<p>Les volumes sont réorientés pour la lecture radiologique (le côté droit du
+patient à gauche de l’écran, l’avant en haut). Au-delà de 48 millions de
+voxels, la résolution dans le plan est réduite de moitié.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+        
+          
+          <a href="../espaces/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Espaces de travail">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              <div class="md-ellipsis">
+                Espaces de travail
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../assistant/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Assistant">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              <div class="md-ellipsis">
+                Assistant
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.sections","navigation.expand","navigation.top","search.highlight","search.share","content.code.copy","navigation.footer"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copié dans le presse-papier","clipboard.copy":"Copier dans le presse-papier","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 de plus sur cette page","search.result.more.other":"# de plus sur cette page","search.result.none":"Aucun document trouvé","search.result.one":"1 document trouvé","search.result.other":"# documents trouvés","search.result.placeholder":"Taper pour démarrer la recherche","search.result.term.missing":"Non trouvé","select.version":"Sélectionner la version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.67a597eb.min.js"></script>
+      
+        <script src="../assets/assistant.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "site": "user",
+  "api": "",
+  "title": "Assistant du guide",
+  "subtitle": "Il répond à partir du guide de l’utilisateur",
+  "color": "#526CFE",
+  "placeholder": "Posez une question sur Projecta…",
+  "suggestions": [
+    "Charger un fichier Excel",
+    "Comparer deux examens",
+    "Pourquoi ma table est vide ?"
+  ],
+  "privacy": "Réponses tirées de ce guide uniquement ; vérifiez les points importants. Vos questions sont gardées 30 jours pour améliorer le guide.",
+  "privacyLocal": "Réponses tirées de ce guide (sa recherche) : votre question ne quitte pas votre navigateur."
+}

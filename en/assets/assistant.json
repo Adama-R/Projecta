@@ -1,0 +1,16 @@
+{
+  "site": "user",
+  "api": "",
+  "title": "Guide assistant",
+  "subtitle": "It answers from the user guide",
+  "color": "#526CFE",
+  "placeholder": "Ask a question about Projecta…",
+  "suggestions": [
+    "Load an Excel file",
+    "Compare two exams",
+    "Why is my table empty?"
+  ],
+  "privacy": "Answers taken from this guide only; check the important points. Your questions are kept 30 days to improve the guide.",
+  "privacyLocal": "Answers taken from this guide (its search): your question does not leave your browser.",
+  "language": "en"
+}
