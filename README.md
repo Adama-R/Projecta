@@ -32,8 +32,8 @@ Sur la page de la [dernière version](https://github.com/Adama-R/Projecta/releas
 | `SHA256SUMS.txt` | vérifier que le fichier téléchargé est intact |
 
 L’application se connecte d’elle-même à **Projecta en ligne** : créez
-votre compte au premier lancement, sans rien installer d’autre (une autre
-API se choisit dans **Fichier › Adresse de l’API…**). N’y envoyez que des
+votre compte au premier lancement, sans rien installer d’autre. N’y
+envoyez que des
 données de démonstration ou déjà anonymisées. Windows peut afficher
 « Windows a protégé votre ordinateur » : l’application n’est pas encore
 signée ; **Informations complémentaires › Exécuter quand même**.
@@ -67,8 +67,8 @@ anonymized when they are opened.
 
 - **Download for Windows**: [latest release](https://github.com/Adama-R/Projecta/releases/latest)
   (installer, portable version, SHA-256 checksums). It connects to Projecta
-  online by itself: create your account on first launch (another API:
-  **File › API address…**); send it demonstration or anonymized data only.
+  online by itself: create your account on first launch; send it
+  demonstration or anonymized data only.
 - **In the browser**, nothing to install, the same account:
   <https://projecta-dash.vercel.app>.
 - **User guide**: <https://adama-r.github.io/Projecta/en/>.
